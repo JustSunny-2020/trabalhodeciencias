@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home{
+    background-image: url(/img/Fundos/Espaço.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.minerios {
+    background-image: url(/img/Fundos/Natureza1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #000;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background .4s;
+}
+
+.menu ul li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.ferroimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1980px;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+  
+  section .card {
+    position: relative;
+    width: 280px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px #12121280;
+    border-radius: 15px;
+    background: #ffffff1b;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    backdrop-filter: blur(5px);
+  }
+  
+  section .card .item {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  section .card:hover .item {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  section .card .item img {
+    width: 250px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    font-size: 8em;
+    pointer-events: none;
+    opacity: 30%;
+  }
+  
+  section .card .item h2 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  section .card .item p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+  }
+  
